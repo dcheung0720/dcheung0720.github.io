@@ -1,0 +1,427 @@
+body{
+    background-color: #B9D9EB;
+}
+
+nav.top-nav{
+    background-color:#72bcd4 ;
+    top: 0px;
+    right:0px;
+    left: 0px;
+    position: fixed;
+    box-shadow: 0px 0px 4px red;
+    color: #000;
+}
+
+nav.top-nav li {
+    display: inline-block;
+    margin: 5px;
+    color: #4D4DDB;
+    user-select: none;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+nav.top-nav li a{
+    color:#191970;
+    text-decoration: none;
+    
+}
+
+nav.top-nav li a:visited{
+    color:#191970;
+}
+
+nav.top-nav li a:hover{
+    opacity: .7;
+}
+
+nav.top-nav li a:active{
+    opacity: .5;
+}
+
+main{
+    margin-top: 80px;
+}
+
+main p.welcome{
+    text-align: center;
+    text-decoration: solid;
+    font-size: 25px;
+}
+
+/* project descriptions */
+
+
+div.projects{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+
+}
+
+div.projects p{
+    margin-left: 10px;
+    text-align: center;    
+}
+
+p.title {
+    margin-left: 30px;
+}
+
+div.horizontal-block{
+    align-items: center;
+}
+
+div.horizontal-block p{
+    width: 450px;
+    overflow: wrap;
+    text-align: left;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+a.learnMore{
+    float:right;
+    margin: 10px;
+}
+
+div.project1{
+    border: 3px solid black;
+    margin: 5px;
+}
+
+div.project1 img{
+    margin-left: 38px;
+    border: 2px solid black;
+}
+
+div.project2 img{
+    height: 400px;
+    width: 396px;
+    border: 2px solid black;
+}
+
+div.project2{
+    border: 3px solid black;
+    margin: 5px;
+}
+
+div.project2 img{
+    margin-left: 38px;
+}
+
+div.projects hr{
+    width: 450px;
+    margin: 10px;
+    color: black;
+    background-color: gray;
+    border: none;
+    height: 2px;
+}
+
+div.projects hr.covers-width{
+    width: 100%;
+    margin-left: 0;
+    color: black;
+    background-color: black;
+    border: none;
+    height: 3px;
+}
+
+p.project-title{
+    font-size: 20px;
+}
+
+p.move-down{
+    margin-top: 29px;
+}
+
+/* Particle System page */
+
+div.project{
+    display: flex;
+    justify-content: center;
+
+}
+
+
+a.previous {
+    background-color: #f1f1f1;
+    color: black;
+  }
+
+div.project-details{
+    border: 3px solid black;
+    margin: 5px;
+    text-align: center;
+    justify-content: center;
+}
+
+div.project-details a:visited{
+    color: #00308F;
+}
+
+div.project-details a{
+    color:#00308F;
+    text-decoration: none;
+}
+
+div.project-details a:hover{
+    opacity: .7;
+}
+
+div.project-details a:active{
+    opacity: .5;
+}
+
+div.project-details hr{
+    height: 3px;
+    background-color: black;   
+}
+
+div.project-details div.descriptions{
+    text-align: left;
+    margin: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 20px;
+}
+
+div.particle-container{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+div.particle-container div{
+    border: 2px solid black;
+    margin: 20px;
+    width: 600px;
+    text-align: center;
+    text-justify: center;
+}
+
+div.particle-container div img{
+    margin: 10px;
+}
+
+div.particle-container div p{
+    margin: 20px;
+    text-align: left;
+    font-size: 20px;
+}
+
+div.particle-container p.title{
+    font-size: 20px;
+}
+
+div.particle-container div hr{
+    height: 1px;
+    background-color: black;
+}
+
+p.big-title button{
+    float:left;
+}
+
+div.style-container{
+    margin-left:100px;
+    margin-right: 100px;
+}
+
+p.big-title{
+    font-size: 30px;
+    text-align: center;
+    text-justify: center;
+}
+
+p.big-title p{
+    margin-right: 100px
+}
+
+/* hydration page */
+div.particle-container img.hydration{
+    width: 375px;
+    height: 600px;
+}
+
+/* bio page */
+
+
+div.bio-title{
+    text-align: center;
+}
+
+div.about-me{
+    border: 2px solid black;
+    display: flex;
+    width: 80%;
+    margin-left: 10%;
+}
+
+div.image-resume{
+    display: flex;
+    align-items: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+div.about-me img{
+    width: 320px;
+    height: 320px;
+    align-self: center;
+    margin: 15px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
+
+
+div.image-resume p{
+    font-size: 25px !important;
+}
+
+div.image-resume a.resume {
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+
+div.about-me p{
+    font-size: 20px;
+}
+
+div.text-about-me{
+    display:flex;
+    flex-wrap:wrap;
+}
+
+div.about-me-block{
+    margin-left: 20px;
+}
+
+div.text-about-me p{
+    margin: 3px;
+    margin-bottom: 15px;
+    margin-right: 10px;
+}
+
+/* resume */
+
+div.resume-details{
+    width: 1200px;
+    border: 3px solid black;
+    margin: 5px;
+    text-align: center;
+    justify-content: center;
+}
+
+/* contact page */
+
+div.contact-container{
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin-left: 10%;
+}
+
+h1{
+    margin-top: 0px;
+    font-size: 30px;
+}
+
+h2{
+    font-size: 30px;
+}
+
+div.image-container{
+    display:flex;
+    flex-wrap: wrap; 
+    width: 500px;  
+    align-items: center;
+    margin-right:50px;
+}
+div.image-container img{
+    width: 300px;
+    height: 300px;
+    margin-left: 50px;
+}
+
+div.contact-info{
+    font-size: 20px;
+    text-align: center;
+    margin: 50px;
+}
+
+h3{
+    font-size:30px;
+}
+
+/* bio link */
+div.image-resume a:visited{
+    color: #00308F;
+}
+
+div.image-resume a{
+    color:#00308F;
+    text-decoration: none;
+}
+
+div.image-resume a:hover{
+    opacity: .7;
+}
+
+div.image-resume a:active{
+    opacity: .5;
+}
+
+/* contact me link */
+div.contact-container a:visited{
+    color: #00308F;
+}
+
+div.contact-container a{
+    color:#00308F;
+    text-decoration: underline;
+}
+
+div.contact-container a:hover{
+    opacity: .7;
+}
+
+div.contact-container a:active{
+    opacity: .5;
+}
+
+span{
+    margin-top: 5px
+}
+
+button{
+    width: 80px;
+}
+
+/* project links */
+
+div.horizontal-block a:visited{
+    color: #00308F;
+}
+
+div.horizontal-block a{
+    color:#00308F;
+    text-decoration: underline;
+}
+
+div.horizontal-block a:hover{
+    opacity: .7;
+}
+
+div.horizontal-block a:active{
+    opacity: .5;
+}
+
+
+
+
+
+

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang = "en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="styles.css">
+        <title>Particle Systems</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    </head>
+    <body>
+        <nav role = "navigation" class = "top-nav"> 
+            <ul>
+                <li> <a href="index.html">Home</a></li>
+                <li> <a href="bio.html">About Me</a> </li>
+                <li> <a href="contactMe.html">Contact Me</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div class = "project">
+                <div class = "project-details">
+                    <div class = "style-container">
+                        <p class = "big-title">
+                            <button aria-label="backButton" class = "back-button">
+                                <a href="index.html">
+                                    <span class="material-symbols-outlined">
+                                        arrow_back
+                                    </span>
+                                </a>
+                            </button>
+                            <b>
+                                <em> Particle Systems </em> 
+                            </b>
+                        </p>
+                    </div>
+                    <hr>
+                    <div class ="descriptions">
+                        <p> <b> Description:</b></p>
+                        <p> This is a course assignment from Generative Methods where I had to create several particle systems to simulate phyiscal phenomena in the real world. In that project, I created an electromagnetic, newtonian gravity, Boids, a regular ball particle systems. The focus of this project is to create collision effects (bounce off of walls), trailing effects (trail particles), and particle interactivty (Newton/Coulomb).</p>
+                        <p> This project was done using a predefined vector library for the particle physics and p5.js to draw on a canvas.  </p>
+                        <p> Link to project website: <a href="https://yuumi-a4.glitch.me/" target = "_blank">David's Particle System</a></p>
+                        <p> Link to project source code: <a href="https://glitch.com/edit/#!/yuumi-a4?path=index.html%3A42%3A31" target = "_blank"> Particle System Source Code</a></p>
+
+                        <div class = "particle-container">
+                            <div class = "collision">
+                                <p class = "title"> <b> Collision </b></p>
+                                <hr>
+                                <img src="images/collision.png" alt="Concentric rings of colorful balls">
+                                <p> This is a basic particle that gets repelled by the mouse. I have also created a bounding box to all four sides of the canvas to simulate inelastic collisions and reflection direction.
+                                     The reflection direction can be mathematically represented by v1 - 2(v1 ⋅ n) * n where n is the unit surface normals of the bounding box. In this bounding box, the surface normals are simply ( with trailing effects0, 1), (1, 0), (-1, 0), and (0, -1).
+                                    I am most proud of this one! Particles would bounce off the wall as expected but there is a problem where if a particle moves too fast, it could fly out of the box and never return.</p>
+                            </div>
+                            <div class = "EM">
+                                <p class = "title"> <b> Electromagnetism </b></p>
+                                <hr>
+                                <img src="images/EM.png" alt="Many red and blue balls for electromagnetic interaction">
+                                <p>This is an EM system attempting to simulate the Coulomb Force; every particle exerts a repuslsion or attraction force that is inversely related to their distance on each other(ie. like-particles repell, opposite-charges attract with a time complexity of n^2).
+                                   There is also a boundary box like system 1 to simulate inelastic collision. When I let the code run, the balls will interact with each other and eventually disappear from the screen after a long time (speed up to max for 1 minute).</p>
+                            </div>
+                            <div class = "boids">
+                                <p class = "title"> <b> Boids </b></p>
+                                <hr>
+                                <img src="images/boids.png" alt="Boids system to simulate bird flying behavior">
+                                <p>This is the Boids system. It is used to simulate bird flocking behavior. In this code, I adapted from the demo and added trailing effects, variation in color and range of the separation force, and my own tuning of the separation, cohesion, and alignment forces.
+                                     This emergent behavior of this system is that it's controlled by the mouse (the particles chases the mouse), and that the planes (I will call them planes) will not leave the bounding circle. </p>
+                            </div>
+                            <div class = "gravity">
+                                <p class = "title"> <b> Gravity </b></p>
+                                <hr>
+                                <img src="images/gravity.png" alt="apples falling under the influence of gravity">
+                                <p> My fourth system is the gravity system. It's a very simple system where a row of apples falls under the influence of gravity (constant downward force). When they reach the bottom, each apple receives a different damping factor so their rebound height would have a variation.</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+        </main>
+    </body>
+</html>

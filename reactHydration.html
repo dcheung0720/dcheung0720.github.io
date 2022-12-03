@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang = "en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="styles.css">
+        <title>React Hydration Tracking</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    </head>
+    <body>
+        <nav role = "navigation" class = "top-nav"> 
+            <ul>
+                <li> <a href="index.html">Home</a></li>
+                <li> <a href="bio.html">About Me</a> </li>
+                <li> <a href="contactMe.html">Contact Me</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div class = "project">
+                <div class = "project-details">
+                    <div class = "style-container">
+                        <p class = "big-title">
+                            <button aria-label="backButton" class = "back-button">
+                                <a href="index.html">
+                                    <span class="material-symbols-outlined">
+                                        arrow_back
+                                    </span>
+                                </a>
+                            </button>
+                            <b>
+                                <em> React Hydration Tracking Application </em> 
+                            </b>
+                        </p>
+                    </div>
+                    <hr>
+                    <div class ="descriptions">
+                        <p> <b> Description:</b></p>
+                        <p> This is a React app with Firebase backend support created by my team and I to help people keep track of their water hydration intake. Everyone can just login using their Google account and start using it right away.  This app is supposed to be a mobile app so the CSS on a web page may not display properly. </p>
+                        <p> Team members: David Cheung(myself), Kangcheng Li, Yue Wang, Bill Wang, Dimitrios, Josh Lee</p>
+                        <p> Link to application: <a href="https://stayhydrated-41d70.firebaseapp.com/" target = "_blank">React Hydration Tracking App</a></p>
+                    </div>
+                    <div class = "particle-container">
+                        <div>
+                            <p class = "title"> <b> App Homepage </b></p>
+                            <hr>
+                            <img class = "hydration" src="images/homepage.png" alt="react application for hydration tracking. Has water bottles, coke bottles, and coffee cups. Tracker is not at 0">
+                            <p> This is the homepage of the application once you log in. As you can see, there is a progress bar near the top indicating how much you have drank today compared to your daily goal. You can keep track of how much you drank by clicking on the "add" button. If you misclicked, you can simply click the subtraction sign. If a drink you drank is not listed on this page, you can add the drink item to the page by clicking "add item"</p>
+                        </div>
+                        <div>
+                            <p class = "title"> <b> Weekly Summary </b></p>
+                            <hr>
+                            <img class = "hydration" src="images/weekly_summary.png" alt="weekly summary on hydration intake. The summary is represented using blue bar graphs.">
+                            <p> This is the weekly summary of your hydration history. You can easily see whether you have met your goals over the week or not. You can also adjust your personal daily hydration goal here.</p>
+                        </div>
+                    </div>
+                </div>
+        </main>
+    </body>
+</html>
